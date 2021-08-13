@@ -5,7 +5,5 @@
 * WebSocket
 * MongoDB
 
-### Url
 
-> https://skimpy-react.herokuapp.com/
 
