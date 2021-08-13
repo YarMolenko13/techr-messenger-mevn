@@ -11,4 +11,4 @@
 
 ### Url
 
-> https://skimpy-react.herokuapp.com/
+> https://agitated-easley-6c8c72.netlify.app/
