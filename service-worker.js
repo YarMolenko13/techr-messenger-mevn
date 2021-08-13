@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ca70a6ea9441ebf95d0a33ec3d13b07e.js"
+  "/techr-messenger-mevn/precache-manifest.a4757495452e7c97a44ca7e33f9d1b8f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "fronend"});
