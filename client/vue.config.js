@@ -7,7 +7,7 @@ module.exports = {
         },
     },
 
-    publicPath: '/techr-messenger-vue/',
+    // publicPath: '/techr-messenger-vue/',
     // git subtree push --prefix dist origin gh-pages
 
 };

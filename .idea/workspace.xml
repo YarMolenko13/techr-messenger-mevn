@@ -49,6 +49,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.EditorConfig" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="front" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="front" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.front" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +80,7 @@
       <workItem from="1626775697959" duration="3096000" />
       <workItem from="1626900264252" duration="7625000" />
       <workItem from="1627043560221" duration="322000" />
-      <workItem from="1628841077718" duration="2184000" />
+      <workItem from="1628841077718" duration="6915000" />
     </task>
     <servers />
   </component>
