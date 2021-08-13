@@ -1,4 +1,5 @@
-# fronend
+# Client
+
 
 ## Project setup
 ```
