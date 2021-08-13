@@ -1,0 +1,53 @@
+// ============================== Login =========================
+.appear-enter-active {
+	opacity: 0;
+	transition: all 0.8s ease;
+	transform: translateX(-300px);
+}
+
+.appear-enter-to {
+	opacity: 1;
+	transform: translateX(0)
+}
+
+.appear-leave-active {
+	opacity: 1;
+	transition: all 0.8s ease;
+	transform: translateX(-300px);
+}
+
+.appear-leave-to {
+	opacity: 0;
+	transform: ranslateX(-300px);
+}
+// ============================== Msgs ========================
+// appear-msgs
+// .appear-msgs-enter-active,
+// .appear-msgs-leave-active {
+// 	transition: all 1s ease;
+// }
+
+// .appear-msgs-enter-from,
+// .list-leave-to {
+// 	opacity: 0;
+// 	transform: translatY(-30px);
+// }
+
+.msg {
+	transition: all .3s ease;
+ }
+ .msg-enter-active,
+ .msg-leave-active {
+	transition: all 1s ease;
+ }
+ .msg-enter-from,
+ .msg-leave-to {
+	opacity: 0;
+	transform: translateY(30px);
+ }
+
+
+
+
+
+
