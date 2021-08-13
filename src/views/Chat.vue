@@ -12,14 +12,12 @@
                         <img :src="require('./../assets/img/exit.png')" alt="" />
                     </div>
                 </div>
-<!--                <div ref="scroll" class="field-chat__body">-->
-<!--                    <msgs :messeges="messeges" :username="username"></msgs>-->
-<!--                </div>-->
                 <transition-group ref="scroll" class="field-chat__body" tag="div" name="appear">
                     <div
                         :class="{
-                        msg__mine: msg.user === username,
-                        msg__other: msg.user !== username,}"
+                            msg__mine: msg.user === username,
+                            msg__other: msg.user !== username,
+                        }"
                         class="msg"
                         v-for="msg in messeges"
                         :key="msg._id"
@@ -27,27 +25,27 @@
                         <div
                             class="msg__usn"
                             :class="{
-                _mine: msg.user === username,
-                _other: msg.user !== username,
-            }"
+                                _mine: msg.user === username,
+                                _other: msg.user !== username,
+                            }"
                         >
                             {{ msg.user }}
                         </div>
                         <div
                             class="msg__text"
                             :class="{
-                _mine: msg.user === username,
-                _other: msg.user !== username,
-            }"
+                                _mine: msg.user === username,
+                                _other: msg.user !== username,
+                            }"
                         >
                             {{ msg.text }}
                         </div>
                         <div
                             class="msg__date"
                             :class="{
-                _mine: msg.user === username,
-                _other: msg.user !== username,
-            }"
+                                _mine: msg.user === username,
+                                _other: msg.user !== username,
+                            }"
                         >
                             {{ msg.date }}
                         </div>
@@ -73,24 +71,19 @@
 <script>
 import axios from "axios";
 import socket from "./../main";
-// import Msgs from "./../components/msgs";
-// import {mapActions} from 'vuex'
 
 export default {
     name: "Chat",
     data() {
         return {
             chatName: "Global chat",
-         messegeText: "",
+            messegeText: "",
             username: "",
             messeges: [],
             countOnline: 0,
             anim: false,
         };
     },
-    // components: {
-    //     Msgs,
-    // },
     methods: {
         async sendMessege() {
             if (this.messegeText.length > 0 && this.messegeText.trim() != "") {
@@ -115,7 +108,7 @@ export default {
                         "Access-Control-Allow-Origin": "*",
                     },
                     data: {
-                        text: this.messegeText,
+                        text: this.messegeText.trim(),
                         user: this.username,
                         date: date,
                     },
@@ -160,7 +153,6 @@ export default {
                 this.messeges = data.data.reverse();
             });
         })();
-        // this.countOnline = JSON.parse(localStorage.getItem('on'))
         socket.on("change-online", (data) => {
             this.countOnline = data;
             console.log(data);
@@ -170,22 +162,5 @@ export default {
             this.messeges = data;
         });
     },
-    // afterUpdate() {
-    // 	// let storageData = {
-    // 	// 	username: this.username,
-    // 	// 	isUserAuth: this.isUserAuth
-    // 	// }
-    // 	// localStorage.setItem('storageData', JSON.stringify(storageData))
-    // 	if (JSON.parse(localStorage.getItem('userData').isUserAuth === false)) {
-    // 		this.$router.push('/')
-    // 	}
-    // },
-    // beforeUnmount() {
-    // 	let storageData = {
-    // 		username: this.username,
-    // 		isUserAuth: this.isUserAuth
-    // 	}
-    // 	localStorage.setItem('storageData', JSON.stringify(storageData))
-    // },
 };
 </script>

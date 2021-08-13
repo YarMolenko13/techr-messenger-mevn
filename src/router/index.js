@@ -13,7 +13,7 @@ const routes = [
     name: "Chat",
     component: () =>
       import("../views/Chat.vue"),
-    meta:{layout:'main'}
+    meta:{layout:'chat'}
   },
   {
     path: '/test',
