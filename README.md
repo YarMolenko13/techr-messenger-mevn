@@ -11,4 +11,4 @@
 
 ### Url
 
-> https://agitated-easley-6c8c72.netlify.app/
+> https://yarmolenko13.github.io/techr-messenger-mevn/
